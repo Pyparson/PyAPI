@@ -12,7 +12,7 @@ from Conf.Config import Config
 base_path = os.path.dirname(__file__)
 path = os.path.abspath(os.path.join(base_path, "..", "Data", "test.yaml"))
 obj = Config(path)
-data = Config.test_data(path)
+test_data = obj.test_data(path)
 
 
 def add(a, b):
@@ -32,13 +32,14 @@ class TestApi:
         yield
         Log.logger("Finnish Method...")
 
-    @pytest.mark.parametrize("name,method, url, headers, params, expected, export", data)
+    @pytest.mark.parametrize("name,method, url, headers, params, expected, export", test_data)
     def test_api(self, name, method, url, headers, params, expected, export):
         allure.dynamic.title("请求接口:{i}".format(i=url))  # 设定用例标题
         allure.dynamic.description("用例描述:{i}".format(i=name))  # 设定用例描述
-        headers = Config.get_var(headers)    # 判断请求头中是否有变量,有的话需获取变量值
+        # com_flag = True    # 设置默认的断言结果
+        headers = obj.get_var(headers)    # 判断请求头中是否有变量,有的话需获取变量值
         Log.logger("Request Headers:"+str(headers))
-        params = Config.get_var(params)    # 判断请求消息体中是否有变量,有的话需获取变量值
+        params = obj.get_var(params)    # 判断请求消息体中是否有变量,有的话需获取变量值
         Log.logger("Request Body:"+str(params))
         if method == "GET":
             data = Base.base_request(url=url, method=method, headers=headers, params=params)
@@ -49,9 +50,10 @@ class TestApi:
         if export == "NULL":      # 接口返回是否需要输出变量供其他接口使用
             pass
         else:
-            Config.set_var(path, export, data)
+            obj.set_var(path, export, data)
         com_flag = Assert.assertion(data,expected)
 
+        assert data.status_code == 200, "Test Failed!!!"
         assert com_flag, "Test Failed!!!"
 
     @pytest.mark.parametrize("a,b,expected", [(5, 7, 9),

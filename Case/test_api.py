@@ -32,32 +32,10 @@ class TestApi:
         yield
         Log.logger("Finnish Method...")
 
-    # @pytest.mark.parametrize("name,method, url, headers, params, expected", data)
-    # def test_api(self, name, method, url, headers, params, expected):
-    #     allure.dynamic.title("请求接口:{i}".format(i=url))  # 设定用例标题
-    #     allure.dynamic.description("用例描述:{i}".format(i=name))  # 设定用例描述
-    #     com_flag = True
-    #     if method == "GET":
-    #         data = Base.base_request(url=url, method=method, headers=headers, params=params)
-    #     elif method == "POST":
-    #         data = Base.base_request(url=url, method=method, headers=headers, data=params)
-    #     Log.logger("Headers:" + str(data.headers))
-    #     Log.logger("Body:" + str(data.text))
-    #     # Config.set_variable(path, data)
-    #     result = Assert.assertion(data, expected)
-    #     for i in result:
-    #         if i == False:
-    #             com_flag = False
-    #             break
-    #
-    #     assert data.status_code == 200, "Test Failed!!!"
-    #     assert com_flag, "Test Failed!!!"
-
     @pytest.mark.parametrize("name,method, url, headers, params, expected, export", data)
     def test_api(self, name, method, url, headers, params, expected, export):
         allure.dynamic.title("请求接口:{i}".format(i=url))  # 设定用例标题
         allure.dynamic.description("用例描述:{i}".format(i=name))  # 设定用例描述
-        # com_flag = True    # 设置默认的断言结果
         headers = Config.get_var(headers)    # 判断请求头中是否有变量,有的话需获取变量值
         Log.logger("Request Headers:"+str(headers))
         params = Config.get_var(params)    # 判断请求消息体中是否有变量,有的话需获取变量值
@@ -72,14 +50,8 @@ class TestApi:
             pass
         else:
             Config.set_var(path, export, data)
-        # result = Assert.assertion(data, expected)     # 校验接口返回,返回结果是一个以True或False的列表
-        # for i in result:     # 对断言
-        #     if i == False:
-        #         com_flag = False
-        #         break
         com_flag = Assert.assertion(data,expected)
 
-        assert data.status_code == 200, "Test Failed!!!"
         assert com_flag, "Test Failed!!!"
 
     @pytest.mark.parametrize("a,b,expected", [(5, 7, 9),

@@ -12,3 +12,8 @@
 - Config 主要用于数据解析  
 ##### Data目录 用于存放测试文件  
 ##### Report目录 用于存放日志和测试报告
+##### main.py 直接执行此文件即可执行测试用例  
+
+# 测试报告截图
+![测试报告](https://github.com/Pyparson/PyAPI/blob/master/Report/%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.png 测试报告)
+

@@ -1,0 +1,101 @@
+[ {
+  "uid" : "d959191a23be7db5",
+  "name" : "test_add[40-40-1]",
+  "time" : {
+    "start" : 1585294252161,
+    "stop" : 1585294252161,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a51dfa7d94838845",
+  "name" : "请求接口:http://www.kuaidi100.com/query",
+  "time" : {
+    "start" : 1585294246654,
+    "stop" : 1585294246737,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2f74e128f8d855e",
+  "name" : "test_add[9-9-18]",
+  "time" : {
+    "start" : 1585294252155,
+    "stop" : 1585294252155,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "790c0afc34075b1a",
+  "name" : "请求接口:http://www.kuaidi100.com/query",
+  "time" : {
+    "start" : 1585294246747,
+    "stop" : 1585294251871,
+    "duration" : 5124
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1f66b82e2182f61",
+  "name" : "请求接口:http://www.kuaidi100.com/query",
+  "time" : {
+    "start" : 1585294252035,
+    "stop" : 1585294252119,
+    "duration" : 84
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "996db8be4b672823",
+  "name" : "test_add[4-4-8]",
+  "time" : {
+    "start" : 1585294252148,
+    "stop" : 1585294252148,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a3ef2de87667c4f",
+  "name" : "请求接口:http://www.kuaidi100.com/query",
+  "time" : {
+    "start" : 1585294246547,
+    "stop" : 1585294246644,
+    "duration" : 97
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28d0a10ba69ab1f4",
+  "name" : "请求接口:http://www.kuaidi100.com/query",
+  "time" : {
+    "start" : 1585294251940,
+    "stop" : 1585294252026,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18cc62a77a3caf1d",
+  "name" : "test_add[5-7-9]",
+  "time" : {
+    "start" : 1585294252132,
+    "stop" : 1585294252132,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fe1c68adee6431c",
+  "name" : "test_add[6-5-30]",
+  "time" : {
+    "start" : 1585294252170,
+    "stop" : 1585294252170,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

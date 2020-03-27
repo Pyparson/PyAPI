@@ -1,0 +1,102 @@
+{
+  "uid" : "c1f66b82e2182f61",
+  "name" : "请求接口:http://www.kuaidi100.com/query",
+  "fullName" : "Case.test_api.TestApi#test_api",
+  "historyId" : "4e0ba046f70ce66cc2646c4a5533b0d0",
+  "time" : {
+    "start" : 1585294252035,
+    "stop" : 1585294252119,
+    "duration" : 84
+  },
+  "description" : "用例描述:POST请求,接口为/query,预期结果为返回码500",
+  "descriptionHtml" : "<p>用例描述:POST请求,接口为/query,预期结果为返回码500</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "用例描述:POST请求,接口为/query,预期结果为返回码500",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "982b16c73f89d873",
+      "name" : "log",
+      "source" : "982b16c73f89d873.txt",
+      "type" : "text/plain",
+      "size" : 1595
+    }, {
+      "uid" : "e737f2511374dad1",
+      "name" : "stderr",
+      "source" : "e737f2511374dad1.txt",
+      "type" : "text/plain",
+      "size" : 1456
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApi"
+  }, {
+    "name" : "host",
+    "value" : "Parsons-Mac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "94963-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "[{'nq': ['code', 500]}]"
+  }, {
+    "name" : "export",
+    "value" : "{'nu': 'body.nu'}"
+  }, {
+    "name" : "headers",
+    "value" : "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}"
+  }, {
+    "name" : "method",
+    "value" : "'POST'"
+  }, {
+    "name" : "name",
+    "value" : "'POST请求,接口为/query,预期结果为返回码500'"
+  }, {
+    "name" : "params",
+    "value" : "{'postid': '4304190674666', 'type': 'yunda'}"
+  }, {
+    "name" : "url",
+    "value" : "'http://www.kuaidi100.com/query'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c1f66b82e2182f61.json",
+  "parameterValues" : [ "[{'nq': ['code', 500]}]", "{'nu': 'body.nu'}", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'POST'", "'POST请求,接口为/query,预期结果为返回码500'", "{'postid': '4304190674666', 'type': 'yunda'}", "'http://www.kuaidi100.com/query'" ]
+}

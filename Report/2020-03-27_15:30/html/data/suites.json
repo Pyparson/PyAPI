@@ -1,0 +1,147 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Case",
+    "children" : [ {
+      "name" : "test_api",
+      "children" : [ {
+        "name" : "TestApi",
+        "children" : [ {
+          "name" : "请求接口:http://www.kuaidi100.com/query",
+          "uid" : "3a3ef2de87667c4f",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585294246547,
+            "stop" : 1585294246644,
+            "duration" : 97
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[{'eq': ['code', 200]}, {'eq': ['headers.Content-Type', 'text/html;charset=UTF-8']}]", "{'headers': 'headers.Content-Type', 'com': 'body.com'}", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'POST'", "'POST请求,接口为/query,测试结果应通过'", "{'postid': '430419067466211100000', 'type': 'yuantong'}", "'http://www.kuaidi100.com/query'" ]
+        }, {
+          "name" : "请求接口:http://www.kuaidi100.com/query",
+          "uid" : "a51dfa7d94838845",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585294246654,
+            "stop" : 1585294246737,
+            "duration" : 83
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[{'eq': ['code', 200]}, {'co': ['headers.Content-Type', 'charset=UTF-8']}]", "'NULL'", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'GET'", "'NULL'", "{'postid': '4304190674662', 'type': '${com}'}", "'http://www.kuaidi100.com/query'" ]
+        }, {
+          "name" : "请求接口:http://www.kuaidi100.com/query",
+          "uid" : "790c0afc34075b1a",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "failed",
+          "time" : {
+            "start" : 1585294246747,
+            "stop" : 1585294251871,
+            "duration" : 5124
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[{'eq': ['code', 200]}, {'eq': ['headers.Content-Type', 'charset=UTF-8']}]", "'NULL'", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'GET'", "'Get请求,接口为/query,测试结果应不通过'", "{'postid': '4304190674662111', 'type': 'yunda'}", "'http://www.kuaidi100.com/query'" ]
+        }, {
+          "name" : "请求接口:http://www.kuaidi100.com/query",
+          "uid" : "28d0a10ba69ab1f4",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585294251940,
+            "stop" : 1585294252026,
+            "duration" : 86
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[{'eq': ['code', 200]}, {'co': ['body.com', 'yunda']}]", "'NULL'", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'POST'", "'POST请求,接口为/query,预期结果返回体是否包含yunda'", "{'postid': '4304190674666', 'type': 'yunda'}", "'http://www.kuaidi100.com/query'" ]
+        }, {
+          "name" : "请求接口:http://www.kuaidi100.com/query",
+          "uid" : "c1f66b82e2182f61",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585294252035,
+            "stop" : 1585294252119,
+            "duration" : 84
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[{'nq': ['code', 500]}]", "{'nu': 'body.nu'}", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'POST'", "'POST请求,接口为/query,预期结果为返回码500'", "{'postid': '4304190674666', 'type': 'yunda'}", "'http://www.kuaidi100.com/query'" ]
+        }, {
+          "name" : "test_add[5-7-9]",
+          "uid" : "18cc62a77a3caf1d",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "failed",
+          "time" : {
+            "start" : 1585294252132,
+            "stop" : 1585294252132,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "5", "7", "9" ]
+        }, {
+          "name" : "test_add[4-4-8]",
+          "uid" : "996db8be4b672823",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585294252148,
+            "stop" : 1585294252148,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "4", "4", "8" ]
+        }, {
+          "name" : "test_add[9-9-18]",
+          "uid" : "c2f74e128f8d855e",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1585294252155,
+            "stop" : 1585294252155,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "9", "9", "18" ]
+        }, {
+          "name" : "test_add[40-40-1]",
+          "uid" : "d959191a23be7db5",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "failed",
+          "time" : {
+            "start" : 1585294252161,
+            "stop" : 1585294252161,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "40", "40", "1" ]
+        }, {
+          "name" : "test_add[6-5-30]",
+          "uid" : "5fe1c68adee6431c",
+          "parentUid" : "0b155c0c4426e9cf255e5bb64fd2e7b7",
+          "status" : "failed",
+          "time" : {
+            "start" : 1585294252170,
+            "stop" : 1585294252170,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "6", "5", "30" ]
+        } ],
+        "uid" : "0b155c0c4426e9cf255e5bb64fd2e7b7"
+      } ],
+      "uid" : "7702cbf17fd8d2cc134c6c8b80687cd5"
+    } ],
+    "uid" : "9a5319302153c9ecff4470c01f6cd733"
+  } ]
+}

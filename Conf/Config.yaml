@@ -1,0 +1,135 @@
+ENV: Debug
+Level : info
+TestList: [test_api.py]
+Var: {"name":"Jame","postid":"4304190674662123"}
+
+Debug:
+    base_url: http://www.kuaidi100.com
+    USER: Tester
+    PASSWORD: 123456
+    Log_Level: Info
+    Path: /XXXX/XXXX
+
+Release:
+    USER: Productor
+    PASSWORD: 123456
+    Log_Level: Info
+    Path: /XXXX/XXXX
+
+Case:
+    - Test:
+          name: test
+          request:
+              method: GET
+              URL: /query
+              headers:
+                  Sec-Fetch-Dest: empty
+                  Sec-Fetch-Mode: cors
+                  Sec-Fetch-Site: same-origin
+                  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                  X-Requested-With: XMLHttpRequest
+              params:
+                  postid: '4304190674662'
+                  type: yuantong
+          validate:
+              - eq:
+                    - code
+                    - 200
+              - eq:
+                    - status
+                    - finish
+          export:
+              code: 200
+              name: Wade
+
+    - Test:
+        request:
+            method: GET
+            URL: /query
+            headers:
+                Sec-Fetch-Dest: empty
+                Sec-Fetch-Mode: cors
+                User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                  (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                X-Requested-With: XMLHttpRequest
+            params:
+                postid: '4304190674662'
+        validate:
+            - eq:
+                  - code
+                  - 201
+
+    - Test:
+        name: test1212
+        request:
+            method: GET
+            URL: /query
+            headers:
+                Sec-Fetch-Dest: empty
+                Sec-Fetch-Site: same-origin
+                User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                  (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                X-Requested-With: XMLHttpRequest
+            params:
+                postid: '4304190674689'
+                type: yunda
+        validate:
+            - eq:
+                  - status
+                  - error
+
+    - Test:
+        name: POST请求,接口为/query,测试结果应通过
+        request:
+            method: POST
+            URL: /query
+            headers:
+                Sec-Fetch-Dest: empty
+                Sec-Fetch-Mode: cors
+                Sec-Fetch-Site: same-origin
+                User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                X-Requested-With: XMLHttpRequest
+            params:
+                postid: '4304190674662111'
+                type: yuantong
+        validate:
+            - eq:
+                  - code
+                  - 200
+            - eq:
+                  - headers.Content-Type
+                  - text/html;charset=UTF-8
+        export:
+            postid: body.com
+            com: body.nu
+
+    - Case:
+          method: Pass
+          URL: AAA
+
+    - Test:
+        name: 参数化调用接口
+        request:
+          method: POST
+          URL: /query
+          headers:
+            Sec-Fetch-Dest: empty
+            Sec-Fetch-Mode: cors
+            Sec-Fetch-Site: same-origin
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+              (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+            X-Requested-With: XMLHttpRequest
+          params:
+            postid: '$postid'
+            type: yuantong
+        validate:
+          - eq:
+              - code
+              - 200
+          - eq:
+              - headers.Content-Type
+              - text/html;charset=UTF-8
+        export:
+          com: body.nu

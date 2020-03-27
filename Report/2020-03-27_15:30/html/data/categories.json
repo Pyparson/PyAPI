@@ -1,0 +1,77 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Test Failed!!!\nassert False",
+      "children" : [ {
+        "name" : "请求接口:http://www.kuaidi100.com/query",
+        "uid" : "790c0afc34075b1a",
+        "parentUid" : "ac63cd276c1943766410a0f98868dadb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1585294246747,
+          "stop" : 1585294251871,
+          "duration" : 5124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[{'eq': ['code', 200]}, {'eq': ['headers.Content-Type', 'charset=UTF-8']}]", "'NULL'", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'GET'", "'Get请求,接口为/query,测试结果应不通过'", "{'postid': '4304190674662111', 'type': 'yunda'}", "'http://www.kuaidi100.com/query'" ]
+      } ],
+      "uid" : "ac63cd276c1943766410a0f98868dadb"
+    }, {
+      "name" : "AssertionError: Test Failed!!!\nassert 9 == 12",
+      "children" : [ {
+        "name" : "test_add[5-7-9]",
+        "uid" : "18cc62a77a3caf1d",
+        "parentUid" : "db936059ad61eb4859c68831642dd9aa",
+        "status" : "failed",
+        "time" : {
+          "start" : 1585294252132,
+          "stop" : 1585294252132,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5", "7", "9" ]
+      } ],
+      "uid" : "db936059ad61eb4859c68831642dd9aa"
+    }, {
+      "name" : "AssertionError: Test Failed!!!\nassert 1 == 80",
+      "children" : [ {
+        "name" : "test_add[40-40-1]",
+        "uid" : "d959191a23be7db5",
+        "parentUid" : "510b367763f2e0ccff18f0e2a03bfc59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1585294252161,
+          "stop" : 1585294252161,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "40", "40", "1" ]
+      } ],
+      "uid" : "510b367763f2e0ccff18f0e2a03bfc59"
+    }, {
+      "name" : "AssertionError: Test Failed!!!\nassert 30 == 11",
+      "children" : [ {
+        "name" : "test_add[6-5-30]",
+        "uid" : "5fe1c68adee6431c",
+        "parentUid" : "b24dbfa2e3f43f4e2d63df4ea0d4129f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1585294252170,
+          "stop" : 1585294252170,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6", "5", "30" ]
+      } ],
+      "uid" : "b24dbfa2e3f43f4e2d63df4ea0d4129f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

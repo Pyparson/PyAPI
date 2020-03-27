@@ -1,0 +1,102 @@
+{
+  "uid" : "a51dfa7d94838845",
+  "name" : "请求接口:http://www.kuaidi100.com/query",
+  "fullName" : "Case.test_api.TestApi#test_api",
+  "historyId" : "d40f861bd497724d7432ce177fce5763",
+  "time" : {
+    "start" : 1585294246654,
+    "stop" : 1585294246737,
+    "duration" : 83
+  },
+  "description" : "用例描述:NULL",
+  "descriptionHtml" : "<p>用例描述:NULL</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "用例描述:NULL",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1f533dc4e3db3409",
+      "name" : "log",
+      "source" : "1f533dc4e3db3409.txt",
+      "type" : "text/plain",
+      "size" : 1725
+    }, {
+      "uid" : "f9a137699aed44a9",
+      "name" : "stderr",
+      "source" : "f9a137699aed44a9.txt",
+      "type" : "text/plain",
+      "size" : 1558
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApi"
+  }, {
+    "name" : "host",
+    "value" : "Parsons-Mac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "94963-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "[{'eq': ['code', 200]}, {'co': ['headers.Content-Type', 'charset=UTF-8']}]"
+  }, {
+    "name" : "export",
+    "value" : "'NULL'"
+  }, {
+    "name" : "headers",
+    "value" : "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}"
+  }, {
+    "name" : "method",
+    "value" : "'GET'"
+  }, {
+    "name" : "name",
+    "value" : "'NULL'"
+  }, {
+    "name" : "params",
+    "value" : "{'postid': '4304190674662', 'type': '${com}'}"
+  }, {
+    "name" : "url",
+    "value" : "'http://www.kuaidi100.com/query'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a51dfa7d94838845.json",
+  "parameterValues" : [ "[{'eq': ['code', 200]}, {'co': ['headers.Content-Type', 'charset=UTF-8']}]", "'NULL'", "{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}", "'GET'", "'NULL'", "{'postid': '4304190674662', 'type': '${com}'}", "'http://www.kuaidi100.com/query'" ]
+}

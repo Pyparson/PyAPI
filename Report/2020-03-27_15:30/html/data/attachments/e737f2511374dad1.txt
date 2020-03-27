@@ -1,0 +1,10 @@
+INFO:root:[INFO 2020-03-27 15:30:52]Start Method...
+INFO:root:[INFO 2020-03-27 15:30:52]Request Headers:{'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Site': 'same-origin', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest'}
+INFO:root:[INFO 2020-03-27 15:30:52]Request Body:{'postid': '4304190674666', 'type': 'yunda'}
+INFO:root:[INFO 2020-03-27 15:30:52]Response Headers:{'Server': 'nginx', 'Date': 'Fri, 27 Mar 2020 07:31:11 GMT', 'Content-Type': 'text/html;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'P3P': 'CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"', 'Cache-Control': 'no-cache', 'Content-Encoding': 'gzip', 'Connection': 'keep-alive'}
+INFO:root:[INFO 2020-03-27 15:30:52]Response Body:{"message":"ok","nu":"4304190674666","ischeck":"1","com":"yunda","status":"200","condition":"F00","state":"3","data":[{"time":"2020-03-18 15:31:11","context":"查无结果","ftime":"2020-03-18 15:31:11"}]}
+INFO:root:[INFO 2020-03-27 15:30:52]Global Var:{"headers": "text/html;charset=UTF-8", "com": "yuantong", "nu": "4304190674666"}
+INFO:root:[INFO 2020-03-27 15:30:52]Not Equal Assert!!! Expected_value !=Actual_value ... 
+INFO:root:[INFO 2020-03-27 15:30:52]Expected_value: 500
+INFO:root:[INFO 2020-03-27 15:30:52]Actual_value: 200
+INFO:root:[INFO 2020-03-27 15:30:52]Finnish Method...

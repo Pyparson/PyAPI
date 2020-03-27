@@ -1,0 +1,117 @@
+Var: {}
+Case:
+    - Test:
+        name: POST请求,接口为/query,测试结果应通过
+        request:
+            method: POST
+            URL: /query
+            headers:
+                Sec-Fetch-Dest: empty
+                Sec-Fetch-Mode: cors
+                Sec-Fetch-Site: same-origin
+                User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                X-Requested-With: XMLHttpRequest
+            params:
+                postid: '430419067466211100000'
+                type: yuantong
+        validate:
+            - eq:
+                  - code
+                  - 200
+            - eq:
+                  - headers.Content-Type
+                  - text/html;charset=UTF-8
+        export:
+            headers: headers.Content-Type
+            com: body.com
+
+    - Test:
+        request:
+            method: GET
+            URL: /query
+            headers:
+                Sec-Fetch-Dest: empty
+                Sec-Fetch-Mode: cors
+                User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                  (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                X-Requested-With: XMLHttpRequest
+            params:
+                postid: '4304190674662'
+                type: ${com}
+        validate:
+            - eq:
+                  - code
+                  - 200
+            - co:
+                - headers.Content-Type
+                - charset=UTF-8
+
+    - Test:
+        name: Get请求,接口为/query,测试结果应不通过
+        request:
+            method: GET
+            URL: /query
+            headers:
+                Sec-Fetch-Dest: empty
+                Sec-Fetch-Site: same-origin
+                User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                  (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                X-Requested-With: XMLHttpRequest
+            params:
+                postid: '4304190674662111'
+                type: yunda
+        validate:
+            - eq:
+                  - code
+                  - 200
+            - eq:
+                  - headers.Content-Type
+                  - charset=UTF-8
+
+    - Test:
+          name: POST请求,接口为/query,预期结果返回体是否包含yunda
+          request:
+              method: POST
+              URL: /query
+              headers:
+                  Sec-Fetch-Dest: empty
+                  Sec-Fetch-Site: same-origin
+                  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                      (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                  X-Requested-With: XMLHttpRequest
+              params:
+                  postid: '4304190674666'
+                  type: yunda
+          validate:
+              - eq:
+                  - code
+                  - 200
+              - co:
+                  - body.com
+                  - yunda
+
+    - Test:
+          name: POST请求,接口为/query,预期结果为返回码500
+          request:
+              method: POST
+              URL: /query
+              headers:
+                  Sec-Fetch-Dest: empty
+                  Sec-Fetch-Site: same-origin
+                  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36
+                      (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+                  X-Requested-With: XMLHttpRequest
+              params:
+                  postid: '4304190674666'
+                  type: yunda
+          validate:
+              - nq:
+                  - code
+                  - 500
+          export:
+               nu: body.nu
+
+    - Case:
+          method: Pass
+          URL: AAA

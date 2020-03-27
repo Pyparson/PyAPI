@@ -1,0 +1,155 @@
+{
+  "uid" : "d959191a23be7db5",
+  "name" : "test_add[40-40-1]",
+  "fullName" : "Case.test_api.TestApi#test_add",
+  "historyId" : "35d30ae0be8ffe96fc7e6e0d219fa78d",
+  "time" : {
+    "start" : 1585294252161,
+    "stop" : 1585294252161,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Test Failed!!!\nassert 1 == 80",
+  "statusTrace" : "self = <Case.test_api.TestApi object at 0x101cc03a0>, a = 40, b = 40\nexpected = 1\n\n    @pytest.mark.parametrize(\"a,b,expected\", [(5, 7, 9),\n                                              (4, 4, 8),\n                                              (9, 9, 18),\n                                              (40, 40, 1),\n                                              (6, 5, 30)])\n    def test_add(self, a, b, expected):\n        sum = add(a, b)\n>       assert expected == sum, \"Test Failed!!!\"\nE       AssertionError: Test Failed!!!\nE       assert 1 == 80\n\n../PyAPI/Case/test_api.py:92: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "class_logging",
+    "time" : {
+      "start" : 1585294246545,
+      "stop" : 1585294246546,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "method_logging",
+    "time" : {
+      "start" : 1585294252160,
+      "stop" : 1585294252160,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Test Failed!!!\nassert 1 == 80",
+    "statusTrace" : "self = <Case.test_api.TestApi object at 0x101cc03a0>, a = 40, b = 40\nexpected = 1\n\n    @pytest.mark.parametrize(\"a,b,expected\", [(5, 7, 9),\n                                              (4, 4, 8),\n                                              (9, 9, 18),\n                                              (40, 40, 1),\n                                              (6, 5, 30)])\n    def test_add(self, a, b, expected):\n        sum = add(a, b)\n>       assert expected == sum, \"Test Failed!!!\"\nE       AssertionError: Test Failed!!!\nE       assert 1 == 80\n\n../PyAPI/Case/test_api.py:92: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f6bb3193c4ffe99e",
+      "name" : "log",
+      "source" : "f6bb3193c4ffe99e.txt",
+      "type" : "text/plain",
+      "size" : 133
+    }, {
+      "uid" : "f36f1212c1f10348",
+      "name" : "stderr",
+      "source" : "f36f1212c1f10348.txt",
+      "type" : "text/plain",
+      "size" : 106
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "class_logging::0",
+    "time" : {
+      "start" : 1585294252176,
+      "stop" : 1585294252176,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "method_logging::0",
+    "time" : {
+      "start" : 1585294252166,
+      "stop" : 1585294252167,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Case"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApi"
+  }, {
+    "name" : "host",
+    "value" : "Parsons-Mac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "94963-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Case.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "40"
+  }, {
+    "name" : "b",
+    "value" : "40"
+  }, {
+    "name" : "expected",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d959191a23be7db5.json",
+  "parameterValues" : [ "40", "40", "1" ]
+}

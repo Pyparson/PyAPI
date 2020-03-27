@@ -4,8 +4,6 @@ from Conf.Config import Config
 
 
 class Assert:
-    # def __init__(self):
-    #     obj = Config()
 
     @classmethod
     # 校验某个字段是否相等
